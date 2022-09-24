@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
 html, body {
   height: 100%;
   width: 100%;
+  font-family: 'Comfortaa', cursive;
+  overflow: hidden;
+  background-color: black;
+}
+.head {
+  text-align: center;
+  margin-top: 15%;
+}
+.title {
+  font-size: 60px;
+  background: -webkit-linear-gradient(0deg, #00f56a 0%, #48abe0 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.subtitle {
+  font-size: 45px;
+  background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
