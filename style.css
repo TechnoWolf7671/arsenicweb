@@ -22,5 +22,6 @@ html, body {
   -webkit-text-fill-color: transparent;
 }
 .navlinks {
-  margin-inline: 5px;;
+  margin-inline: 5px;
+  text-decoration: none;
 }
