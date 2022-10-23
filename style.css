@@ -24,7 +24,7 @@ html, body {
 .navlinks {
   margin-inline: 8px;
   text-decoration: none;
-  border-color: white;
+  border: 3px white;
 }
 nav {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
