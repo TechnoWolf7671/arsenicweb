@@ -12,13 +12,12 @@ html, body {
 }
 .title {
   font-size: 60px;
-  background: -webkit-linear-gradient(0deg, #00f56a 0%, #48abe0 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 .subtitle {
   font-size: 45px;
+}
+#grad1 {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
