@@ -18,7 +18,7 @@ html, body {
 }
 #grad1 {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .navlinks {
@@ -27,6 +27,6 @@ html, body {
 }
 nav {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
