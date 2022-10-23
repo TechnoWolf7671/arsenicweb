@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   font-family: 'Comfortaa', cursive;
   overflow: hidden;
-  background-color: black;
+  background: -webkit-linear-gradient(0deg, #0011ff 0%, hsl(175, 100%, 51%) 100%);;
 }
 .head {
   text-align: center;
@@ -18,16 +18,15 @@ html, body {
 }
 #grad1 {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .navlinks {
   margin-inline: 8px;
   text-decoration: none;
-  border: 3px white;
 }
 nav {
   background: -webkit-linear-gradient(0deg, #00a3f5 0%, #37ff00 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
