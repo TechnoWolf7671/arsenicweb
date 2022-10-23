@@ -4,7 +4,8 @@ html, body {
   width: 100%;
   font-family: 'Comfortaa', cursive;
   overflow: hidden;
-  background: -webkit-linear-gradient(0deg, #0011ff 0%, hsl(175, 100%, 51%) 100%);;
+  background: rgb(63,153,157);
+  background: linear-gradient(90deg, rgba(63,153,157,1) 0%, rgba(57,39,84,1) 38%, rgba(53,104,124,1) 100%);
 }
 .head {
   text-align: center;
