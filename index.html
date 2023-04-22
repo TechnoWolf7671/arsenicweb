@@ -26,7 +26,7 @@
       <li><a href="/Features">Features</a></li>
     </ul>
   </nav>
-  <section class="sec1">
+  <section id="homeheader" class="sec1">
     <h1>Arsenic Client</h1>
     <p>Cool client slogan</p>
     <a href="/Download"><button class="homebutton">Download</button></a>
@@ -63,6 +63,23 @@
     <p>Devoloped by Traceback & Akuma</p>
     </div>
 <script src="script.js"></script>
+<script src="p5.min.js"></script>
+<script src="vanta.trunk.min.js"></script>
+<script>
+VANTA.TRUNK({
+  el: "#homeheader",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xff004f,
+  spacing: 10.00,
+  chaos: 10.00
+})
+</script>
 </body>
 
 </html>
