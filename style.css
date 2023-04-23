@@ -36,9 +36,11 @@ section {
 }
 .sec1 h1 {
   font-size: 150px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .sec1 p {
   font-size: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .sec1 {
   background-repeat: no-repeat;
@@ -209,5 +211,6 @@ section {
   
 }
 .homeinfo p {
-  font-size: 20px
+  font-size: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
