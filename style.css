@@ -36,11 +36,9 @@ section {
 }
 .sec1 h1 {
   font-size: 150px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .sec1 p {
   font-size: 60px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .sec1 {
   background-repeat: no-repeat;
@@ -66,7 +64,6 @@ section {
   font-family: 'Inter', sans-serif;
   color: #ffffff;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px 0px 10px 0px;
 }
 .homebutton:hover {
@@ -212,5 +209,4 @@ section {
 }
 .homeinfo p {
   font-size: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
