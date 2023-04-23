@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
-head, body {
+@font-face {
+  font-family: 'Inter';
+  src: url('Inter-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+html, head, body {
   height: 100%;
   width: 100%;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Inter', sans-serif;
   background-color: #1f1e24;
   color: white;
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 a, li {
   text-decoration: none;
@@ -27,33 +33,42 @@ section {
   width: 100%;
   background-color: #1f1e24;
   display: flex;
+}
+.sec1 h1 {
+  font-size: 150px;
+}
+.sec1 p {
+  font-size: 60px;
+}
+.sec1 {
+  background-repeat: no-repeat;
+  background-size: cover;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.sec1 h1 {
-  font-size: 100px;
-}
-.sec1 p {
-  font-size: 30px;
-}
-.sec1 {
-  background-repeat: no-repeat;
-  background-size: cover;
+.clientname {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  transform: translateY(-50%);
 }
 .homebutton {
-  border: 3px solid #141226;
-  background-color: #1f1e24;
+  border: 3px solid #df2a4e;
+  background-color: #212431;
   cursor: pointer;
-  font-size: 40px;
-  font-family: 'Comfortaa', cursive;
-  color: white;
+  font-size: 25px;
+  width: 160px;
+  height: 50px;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 0px 10px 0px;
 }
 .homebutton:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 .navbar {
@@ -68,10 +83,23 @@ section {
   align-items: center;
   margin: 0px;
   z-index: 2;
+  justify-content: space-between; /* add this property */
+}
+
+.headertitle {
+  margin-right: 10%; /* add this property */
+}
+
+.navlinks {
+  padding-right: 1%;
+  margin-left: 10%; /* add this property */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(33, 38, 59, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -80,6 +108,9 @@ section {
   text-decoration: none;
   margin-right: 20px;
   font-size: 18px;
+}
+.navbar a:hover {
+  color: #ff00c8;
 }
 ::-webkit-scrollbar {
   width: 0.5em;
@@ -100,18 +131,23 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: black;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .featurebox {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 120px;
   margin: 20px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background-color: #000000;
+  background-color: #1a1c2d;
   position: relative;
   border: 3px solid black;
   overflow: hidden;
+  border-radius: 10px 0px 10px 0px;
   transition: transform 0.3s;
 }
 .features h1 {
@@ -119,23 +155,15 @@ section {
 }
 .featurebox h2 {
   margin-top: 0;
+  margin: 0px;
+  padding: 0;
 }
 
 .featurebox p {
-  margin-bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
 }
-
-.featurebox::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
 .featurebox:hover::before {
   opacity: 1;
   transform: translateY(-20px);
@@ -147,70 +175,39 @@ section {
   border: 3px solid white;
 }
 .feature-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  top: 35%;
+  right: 1%;
+  transform: translateY(-50%);
 }
-
 .footer p {
   margin: 0;
   padding: 0;
 }
-.prices {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.glow {
+  text-shadow: 0px 0px 20px rgba(223, 42, 78, 1);
 }
-
-.pricebox {
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background-color: #000000;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid black;
-  transition: transform 0.3s;
+.hometitle {
+  padding: 0px;
+  margin: 0px;
 }
-.prices h1 {
-  font-size: 50px;
+.slogan {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
-.pricebox h2 {
-  margin-top: 0;
+.homeinfo {
+  border-radius: 10px 0px 10px 0px;
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  transform: translateY(-50%);
+  width: 900px;
+  height: 300px;
+  
 }
-
-.pricebox p {
-  margin-bottom: 0;
-}
-
-.pricebox:hover::before {
-  opacity: 1;
-  transform: translateY(-20px);
-}
-
-.pricebox:hover {
-  z-index: 1;
-  transform: translateY(-20px);
-  border: 3px solid white;
-}
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.pbutton {
-  border: 3px solid #141226;
-  background-color: #1f1e24;
-  cursor: pointer;
-  font-size: 25px;
-  font-family: 'Comfortaa', cursive;
-  color: white;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-.pbutton:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+.homeinfo p {
+  font-size: 20px
 }
